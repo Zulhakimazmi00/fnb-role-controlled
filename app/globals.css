@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fff8fa;
+  --foreground: #3b1f2b;
+
+  --dunkin-pink: #f582ae;
+  --dunkin-pink-dark: #e85d91;
+  --dunkin-orange: #f58220;
+  --dunkin-orange-dark: #df6d0d;
+
+  --dunkin-brown: #4a2633;
+  --dunkin-cream: #fff8fa;
+  --dunkin-border: #f3dce5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--dunkin-pink);
+  color: white;
+}
+
+/* Dunkin-style utility classes */
+
+.dunkin-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--dunkin-pink),
+    var(--dunkin-orange)
+  );
+}
+
+.dunkin-primary {
+  background: var(--dunkin-pink);
+  color: white;
+}
+
+.dunkin-primary:hover {
+  background: var(--dunkin-pink-dark);
+}
+
+.dunkin-secondary {
+  background: var(--dunkin-orange);
+  color: white;
+}
+
+.dunkin-secondary:hover {
+  background: var(--dunkin-orange-dark);
+}
+
+.dunkin-card {
+  background: white;
+  border: 1px solid var(--dunkin-border);
+  border-radius: 16px;
+}
+
+.dunkin-heading {
+  color: var(--dunkin-brown);
+}
